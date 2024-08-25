@@ -17,13 +17,12 @@ const UserSchema = new mongoose.Schema({
   },
   mobileNo: {
     type: String,
-    required: true,
-    unique: true,
+    required: true
   },
   role: {
     type: String,
     required: true,
-    enum: ['User', 'Admin', 'Guest'],
+    enum: ['user', 'admin', 'guest'],
   },
   password: {
     type: String,
